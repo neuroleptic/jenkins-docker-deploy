@@ -1,0 +1,15 @@
+server:
+  port: 8787
+
+spring:
+  application:
+    name: account-service
+
+eureka:
+  client:
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://54.91.150.50:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
